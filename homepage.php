@@ -25,7 +25,7 @@ include("connect.php");
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="components/aboutus.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#classes">Membership</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pages">Gallery</a></li>
@@ -45,7 +45,9 @@ include("connect.php");
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay">
+            
+        </div>
         <div class="hero-content">
             <h1>Shape Your Body</h1>
             <h2>Be Strong, Train Hard</h2>
@@ -54,6 +56,14 @@ include("connect.php");
         </div>
     </section>
 
+    <section class="about">
+        <div class="img-about">
+
+        </div>
+        <div class="des-about-1">
+            <h2>About Us</h2>
+        </div>
+    </section>
 
 
     <!-- Footer -->

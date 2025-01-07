@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" id="signup" style="display:none;">
-      <h1 class="form-title">Register</h1>
-      <form method="post" action="register.php">
+
+
+<div class="container" id="signup" style="display:none;">
+    <h1 class="form-title">Sign up</h1>
+    <form method="post" action="register.php">
         <div class="input-group">
-           <i class="fas fa-user"></i>
-           <input type="text" name="fName" id="fName" placeholder="First Name" required>
-           <label for="fname">First Name</label>
+            <i class="fas fa-user"></i>
+            <input type="text" name="fName" id="fName" placeholder="First Name" required>
+            <label for="fName">First Name</label>
         </div>
         <div class="input-group">
             <i class="fas fa-user"></i>
@@ -31,20 +33,29 @@
             <input type="password" name="password" id="password" placeholder="Password" required>
             <label for="password">Password</label>
         </div>
-       <input type="submit" class="btn" value="Sign Up" name="signUp">
-      </form>
-      <p class="or">
-        ----------or--------
-      </p>
-      <div class="icons">
-        <i class="fab fa-google"></i>
-        <i class="fab fa-facebook"></i>
-      </div>
-      <div class="links">
+
+        <!-- Role Selection -->
+        <div class="input-group">
+            <label for="role">Register as:</label><br>
+            <input type="radio" name="role" id="role_admin" value="admin" required>
+            <label for="role_admin">Admin</label>
+            <input type="radio" name="role" id="role_user" value="user" required>
+            <label for="role_user">User</label>
+        </div>
+
+        <input type="submit" class="btn" value="Sign Up" name="signUp">
+    </form>
+
+    <div class="links">
         <p>Already Have Account ?</p>
         <button id="signInButton">Sign In</button>
-      </div>
     </div>
+</div>
+
+
+
+
+
 
     <div class="container" id="signIn">
         <h1 class="form-title">Sign In</h1>
@@ -59,23 +70,32 @@
               <input type="password" name="password" id="password" placeholder="Password" required>
               <label for="password">Password</label>
           </div>
+
+           <!-- Role Selection -->
+        <div class="input-group">
+            <label for="role">Register as:</label><br>
+            <input type="radio" name="role" id="role_admin" value="admin" required>
+            <label for="role_admin">Admin</label>
+            <input type="radio" name="role" id="role_user" value="user" required>
+            <label for="role_user">User</label>
+        </div>
+
           <p class="recover">
             <a href="#">Recover Password</a>
           </p>
          <input type="submit" class="btn" value="Sign In" name="signIn">
         </form>
-        <p class="or">
-          ----------or--------
-        </p>
-        <div class="icons">
-          <i class="fab fa-google"></i>
-          <i class="fab fa-facebook"></i>
-        </div>
+        
+       
         <div class="links">
-          <p>Don't have account yet?</p>
-          <button id="signUpButton">Sign Up</button>
+          <h5>Don't have account yet?</h5>
+          <button id="signUpButton">Sign Up | </button>
         </div>
       </div>
+
+
+
+
       <script src="script.js"></script>
 </body>
 </html>

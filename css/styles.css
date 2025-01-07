@@ -52,8 +52,9 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
-    /* text-align: center; */
+    text-align:left;
 }
+
 .hero h1 {
     font-size: 3.5rem;
     font-weight: bold;
@@ -73,4 +74,8 @@ body {
 }
 .hero .btn:hover {
     background: #e64a19;
+}
+
+.about{
+    background-color: black;
 }
