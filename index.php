@@ -71,15 +71,6 @@
               <label for="password">Password</label>
           </div>
 
-           <!-- Role Selection -->
-        <div class="input-group">
-            <label for="role">Register as:</label><br>
-            <input type="radio" name="role" id="role_admin" value="admin" required>
-            <label for="role_admin">Admin</label>
-            <input type="radio" name="role" id="role_user" value="user" required>
-            <label for="role_user">User</label>
-        </div>
-
           <p class="recover">
             <a href="#">Recover Password</a>
           </p>
